@@ -1,7 +1,30 @@
+# 🦕 deno-gql-server
 
-## Objective
-- Build a GraphQL server library that can be used as a remote schema with Hasura / Apollo / AppSync
+Based on [Deno](https://deno.land) module starter repository.
+As of 0.0.1, I am using the official [GraphQL](https://graphql.org) specs to build a demo server.
+## Usage
 
-## Sources
-- https://dev.to/brunnerlivio/create-your-first-module-with-deno-575k
+```typescript
+import { startServer } from "https://raw.githubusercontent.com/hilalh/deno-gql-server/{VERSION}/mod.ts";
 
+const server = startServer(port: 3000);
+```
+
+## Test
+
+```bash
+# unit tests
+deno ./test.ts
+```
+
+## Format code
+
+```bash
+deno fmt **/*.ts
+```
+
+## Resources
+
+- [Deno Website](https://deno.land)
+- [Deno Style Guide](https://deno.land/std/style_guide.md)
+- [Deno Gitter](https://gitter.im/denolife/Lobby)
